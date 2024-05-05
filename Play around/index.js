@@ -96,7 +96,7 @@
 // console.log(`${negative}`)
 
 /*************METHOD CHAINING*****************/
-let username = "  sANDilEcodE";
+// let username = "  sANDilEcodE";
 // username = username.trim();
 // let letter = username.charAt(0);
 // letter = letter.toUpperCase();
@@ -108,3 +108,56 @@ let username = "  sANDilEcodE";
 // username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLowerCase();
 //
 // console.log(username);
+
+/*************LOGICAL OPERATORS*****************/
+// used to combine or manipulate boolean value
+
+// const temp = 25;
+//
+// if(temp <= 0 || temp >= 30 ) {
+//     console.log("The weather is bad");
+// } else {
+//     console.log("The weather is Good!");
+// }
+
+/*************STRICT EQUALITY*****************/
+
+// const PI = "3.14";
+//
+// if(PI !== 3.14) {
+//     console.log("This is NOT PI");
+// } else {
+//     console.log("This is PI");
+// }
+
+/*************WHILE LOOPS*****************/
+// let isLoggedIn = true;
+// let username;
+// let password;
+
+// while (!isLoggedIn) {
+//     username = window.prompt("Enter your username");
+//     password = window.prompt("Enter you Password");
+//     if (username === "myUsername" && password === "myPassword") {
+//         isLoggedIn = true;
+//         console.log("You are logged in!");
+//     } else {
+//         window.alert("Invalid Credentials, Please try again");
+//     }
+// }
+
+// do {
+//     username = window.prompt("Enter your username");
+//     password = window.prompt("Enter you Password");
+//
+//     if (username === "myUsername" && password === "myPassword") {
+//         isLoggedIn = true;
+//         window.alert("You are logged in!");
+//     } else {
+//         window.alert("Invalid Credentials, Please try again");
+//     }
+// } while (!isLoggedIn)
+
+
+
+

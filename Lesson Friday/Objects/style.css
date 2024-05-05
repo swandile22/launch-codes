@@ -29,6 +29,14 @@ form {
     padding: 10px 20px;
 }
 
+#confirm__password__label.red {
+   color: red;
+}
+
+#confirm__password__label.green {
+   color: green;
+}
+
 /**********************************************************/
 /********************MOBILE RESPONSIVENESS*****************/
 /**********************************************************/

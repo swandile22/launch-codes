@@ -10,15 +10,27 @@
 </head>
 <body>
 <form>
-    <label>Username</label>
-    <input class="my__username"></input>
-    <label>Email</label>
-    <input class="my__username"></input>
-    <label>Password</label>
-    <input class="my__username"></input>
-    <label>Confirm Password</label>
-    <input class="my__username"></input>
-    <button type="submit">Submit</button>
+    <h1>Enter your credentials to sign up</h1>
+    <div class="my__input__group">
+        <label for="username__id">Username:</label>
+        <input id="username__id" class="my__inputs">
+    </div>
+
+    <div class="my__input__group">
+        <label for="email__id">Email</label>
+        <input id="email__id" class="my__inputs">
+    </div>
+
+    <div class="my__input__group">
+        <label for="password__id">Password:</label>
+        <input id="password__id" class="my__inputs" type="password">
+    </div>
+
+    <div class="my__input__group">
+        <label for="confirm__password__id">Confirm Password:</label>
+        <input id="confirm__password__id" class="my__inputs" type="password">
+    </div>
+    <button class="sign__up__btn" type="submit">Sign up</button>
 </form>
 <script src="index.js"></script>
 </body>

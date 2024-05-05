@@ -1,0 +1,49 @@
+body {
+    background: bisque;
+}
+
+form {
+    width: 25%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: #fff;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    padding: 55px;
+    border-radius: 50px;
+}
+
+.my__input__group {
+    display: flex;
+    flex-direction: column;
+}
+
+.my__inputs{
+    height: 25px;
+}
+
+.sign__up__btn {
+    padding: 10px 20px;
+}
+
+/**********************************************************/
+/********************MOBILE RESPONSIVENESS*****************/
+/**********************************************************/
+@media screen and (max-width: 1024px) {
+    form {
+        width: 70%;
+    }
+
+    .my__inputs {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    form {
+        width: 65%;
+    }
+}

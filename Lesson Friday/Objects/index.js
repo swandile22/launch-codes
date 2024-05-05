@@ -116,7 +116,3 @@ signUpBtn.addEventListener("click", (event) => {
 
 
 
-
-
-
-

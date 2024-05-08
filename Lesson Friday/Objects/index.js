@@ -78,6 +78,7 @@
 
 const signUpBtn = document.getElementById("sign__up__btn__id");
 myDatabase = {};
+let currentUser = null;
 console.log(myDatabase);
 
 signUpBtn.addEventListener("click", (event) => {
@@ -109,7 +110,9 @@ signUpBtn.addEventListener("click", (event) => {
         confirmPasswordLabel.textContent = "Passwords match";
         newUser.addToDB();
         console.log(myDatabase);
-
+        currentUser = email;
+        sessionStorage.setItem("myWebUsers", JSON.stringify(myDatabase));
+        sessionStorage.setItem("currentUser", JSON.stringify(currentUser));
     }
 });
 

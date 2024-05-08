@@ -1,0 +1,32 @@
+body {
+    margin: 0 auto;
+}
+
+nav {
+    background: bisque;
+    padding: 30px 60px;
+}
+
+nav .home__page__navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home__page__navbar__cart {
+    position: relative;
+    background: #fff;
+    padding: 10px;
+    height: 35px;
+    border-radius: 15px;
+}
+
+.home__page__navbar__cart__number {
+    position: absolute;
+    background: #d4a373;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px 8px;
+    right: -22%;
+    top: -32%;
+
+}

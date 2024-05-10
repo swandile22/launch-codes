@@ -87,7 +87,7 @@ productsList.push(new ProductObject(
     "images/DrinkJarGrandpasMoonshine.webp",
     "GrandPa's Moonshine!",
     "Lorem ipsum dolor sit amet, consectetur adipisicing.",
-    (10 * 50_000)
+    (10 * 50)
 ));
 
 productsList.push(new ProductObject(

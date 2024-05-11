@@ -159,6 +159,30 @@
 // } while (!isLoggedIn)
 
 
+/*************FOR LOOPS*****************/
+
+// console.log("***************************\nThese are your even numbers\n***************************")
+//
+// for(let i = 2; i <= 50; i+=2) {
+//     if(i == 20) {
+//         continue;
+//     }
+//     console.log(i);
+// }
+//
+// console.log("***************************\n\n***************************")
+//
+// for(let i = 1; i <= 50; i+=2) {
+//     if(i == 25) {
+//         continue;
+//     }
+//     console.log(i);
+// }
+//
+// console.log("***************************\nThese are your odd numbers\n***************************")
+
+
+
 
 
 

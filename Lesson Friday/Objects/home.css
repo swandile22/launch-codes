@@ -77,8 +77,11 @@ section {
     gap: 10px;
 }
 
-.home__page__item__content__details__price__group__buttons__amount {
+.home__page__item__content__details__price__group__buttons__btn {
+    border-radius: 10px;
     font-size: 1rem;
+    padding: 5px 10px;
+
 }
 
 /************************************************/

@@ -138,15 +138,22 @@ addEventListener("load", (event) => {
         );
     });
 
-    const testBtn = document.querySelector(".home__page__item__content__details__price__group__buttons__btn");
 
-if (testBtn) {
-    testBtn.addEventListener("click", (event) => {
-        console.log("I've been clicked");
-    });
-} else {
-    console.error("Element not found");
-}
+    let testBtns = document.querySelectorAll(".home__page__item__content__details__price__group__buttons__btn");
+    const cart = [];
+
+    for (let i = 0; i < testBtns.length; i++) {
+        let testBtn = testBtns[i];
+
+        testBtn.addEventListener("click", (event) => {
+            // let cartNumber = document.getElementById("home__page__navbar__cart__number__id").innerText;
+            // cartNumber = Number(cartNumber);
+            // console.log(typeof cartNumber);
+            // cartNumber = (cartNumber + 1);
+            // console.log(cartNumber);
+        })
+    }
+
 })
 
 

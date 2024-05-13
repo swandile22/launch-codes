@@ -22,7 +22,7 @@ const generateCard = (image, title, description, price) => {
                 <div class="home__page__item__content__details__price__group">
                     <div class="home__page__item__content__details__price__group__price">$ ${price}</div>
                     <div class="home__page__item__content__details__price__group__buttons">
-                      <button id="home__page__item__content__details__price__group__buttons__btn" class="home__page__item__content__details__price__group__buttons__btn">Add to cart</button>
+                      <button data-product-type="${title}" id="home__page__item__content__details__price__group__buttons__btn" class="home__page__item__content__details__price__group__buttons__btn">Add to cart</button>
                     </div>
                 </div>
             </div>
@@ -146,11 +146,15 @@ addEventListener("load", (event) => {
         let testBtn = testBtns[i];
 
         testBtn.addEventListener("click", (event) => {
-            // let cartNumber = document.getElementById("home__page__navbar__cart__number__id").innerText;
-            // cartNumber = Number(cartNumber);
-            // console.log(typeof cartNumber);
-            // cartNumber = (cartNumber + 1);
-            // console.log(cartNumber);
+            let cartNumber = document.getElementById("home__page__navbar__cart__number__id").innerText;
+
+            console.log(testBtn.dataset.productType);
+            cart.push(testBtn.dataset.productType);
+            console.log(cart);
+            console.log(cart.length);
+
+
+
         })
     }
 

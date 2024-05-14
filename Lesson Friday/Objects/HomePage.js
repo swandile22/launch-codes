@@ -146,12 +146,14 @@ addEventListener("load", (event) => {
         let testBtn = testBtns[i];
 
         testBtn.addEventListener("click", (event) => {
-            let cartNumber = document.getElementById("home__page__navbar__cart__number__id").innerText;
+            let cartNumber = document.getElementById("home__page__navbar__cart__number__id");
+            let cartLength = cart.length;
 
             console.log(testBtn.dataset.productType);
             cart.push(testBtn.dataset.productType);
             console.log(cart);
-            console.log(cart.length);
+            cartNumber.innerText = `${cartLength}`;
+
 
 
 

@@ -183,8 +183,44 @@
 
 /*************JAVASCRIPT FUNCTIONS*****************/
 
+// function add(x, y) {
+//     return x + y;
+// }
+//
+// function isEven(number) {
+//     return number % 2 === 0 ? `${number} is an even number` : `${number} is an odd number`;
+// }
+//
+//
+// console.log(add(2,3));
+// console.log(isEven(9));
 
+// function calculate(num1, num2, operator) {
+//     switch (operator) {
+//         case "+" :
+//             console.log(num1 + num2)
+//             break;
+//
+//         case "-" :
+//             console.log(num1 - num2)
+//             break;
+//
+//         case "*" :
+//             console.log(num1 * num2)
+//             break;
+//
+//         case "/" :
+//             console.log(num1 / num2)
+//             break;
+//
+//         default:
+//             console.log("Please use the correct operator");
+//     }
+// }
+//
+// calculate(5, 23, "*");
 
+/*************VARIABLE SCOPE*****************/
 
 
 

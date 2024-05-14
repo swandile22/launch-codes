@@ -181,6 +181,9 @@
 //
 // console.log("***************************\nThese are your odd numbers\n***************************")
 
+/*************JAVASCRIPT FUNCTIONS*****************/
+
+
 
 
 

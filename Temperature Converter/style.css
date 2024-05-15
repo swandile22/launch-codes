@@ -1,0 +1,63 @@
+body {
+    font-family: sans-serif;
+}
+
+.temperature__converter {
+    width: 18%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 5px solid lightslategray;
+    border-radius: 35px;
+    padding: 60px 60px 80px 60px;
+}
+
+.temperature__converter__number {
+    width: 50%;
+    padding-left: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.temperature__converter__fahrenheit__group {
+    padding-top: 25px;
+}
+
+.temperature__converter__celsius__group {
+    padding-bottom: 15px;
+}
+
+.temperature__converter__fahrenheit__group,
+.temperature__converter__celsius__group {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+span svg {
+    width: 20px;
+    padding: 0 10px;
+}
+
+.temperature__converter__button {
+    font-size: 1.3rem;
+    background-color: red;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.temperature__converter__output {
+    padding-top: 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: red;
+}

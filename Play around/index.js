@@ -240,8 +240,8 @@
 
 /*************JAVASCRIPT ARRAYS*****************/
 
-const fruits= ["apple", "orange", "banana"];
-const months= ["January", "March", "May", "February"];
+// const fruits= ["apple", "orange", "banana"];
+// const months= ["January", "March", "May", "February"];
 
 // fruits.push("coconut");
 // fruits.pop();

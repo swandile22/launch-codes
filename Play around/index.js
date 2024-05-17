@@ -238,5 +238,35 @@
 //
 // function2();
 
+/*************JAVASCRIPT ARRAYS*****************/
+
+const fruits= ["apple", "orange", "banana"];
+const months= ["January", "March", "May", "February"];
+
+// fruits.push("coconut");
+// fruits.pop();
+// fruits.unshift("apricot");
+// fruits.shift();
+// console.log(fruits.indexOf("apple", 2));
+// console.log(fruits);
+// console.log(fruits.length);
+
+// for(let i = 0; i < fruits.length; i++){
+//     console.log(fruits[i]);
+// }
+
+// for(let i = fruits.length -1; i >= 0; i--){
+//     console.log(fruits[i]);
+// }
+
+// for(let fruit of fruits){
+//     console.log(fruit);
+// }
+
+// fruits.sort();
+// months.sort();
+// fruits.reverse();
+// console.log(fruits);
+// console.log(months)
 
 

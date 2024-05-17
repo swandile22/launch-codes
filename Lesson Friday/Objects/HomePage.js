@@ -22,7 +22,14 @@ const generateCard = (image, title, description, price) => {
                 <div class="home__page__item__content__details__price__group">
                     <div class="home__page__item__content__details__price__group__price">$ ${price}</div>
                     <div class="home__page__item__content__details__price__group__buttons">
-                      <button data-product-type="${title}" id="home__page__item__content__details__price__group__buttons__btn" class="home__page__item__content__details__price__group__buttons__btn">Add to cart</button>
+                      <button 
+                        data-product-type="${title}"
+                        data-product-price="${price}"
+                        data-product-image="${image}"
+                        id="home__page__item__content__details__price__group__buttons__btn"
+                        class="home__page__item__content__details__price__group__buttons__btn">
+                            Add to cart
+                        </button>
                     </div>
                 </div>
             </div>
@@ -138,28 +145,33 @@ addEventListener("load", (event) => {
         );
     });
 
-
+    /**
+     * The code below has a click event that detects which product's "add to cart" button is clicked and adds that
+     * specific product name into the cart array and then changes the cart number based on the number of items that are
+     * in the cart array.
+     * @testBtns [string]  Elements that has the specific class "home__page__item__content__details__price__group__buttons__btn"
+     * are the add to cart buttons on the product cards.
+     * @cart [array] cart array that will store product names.
+     * @testBtn [string] Is a selected button with a specific index.
+     * @cartNumber [string] contains a number value that appears on the cart icon
+     *
+     * */
     let testBtns = document.querySelectorAll(".home__page__item__content__details__price__group__buttons__btn");
-    const cart = [];
+    const cart = {};
+    const cartNumber = document.getElementById("home__page__navbar__cart__number__id");
 
-    for (let i = 0; i < testBtns.length; i++) {
-        let testBtn = testBtns[i];
+    testBtns.forEach((testBtn) => {
+        testBtn.addEventListener("click", () => {
+            const productName = testBtn.dataset.productType;
+            const productPrice = testBtn.dataset.productPrice;
+            const productImage = testBtn.dataset.productImage;
 
-        testBtn.addEventListener("click", (event) => {
-            let cartNumber = document.getElementById("home__page__navbar__cart__number__id");
-            let cartLength = cart.length;
-
-            console.log(testBtn.dataset.productType);
-            cart.push(testBtn.dataset.productType);
-            console.log(cart);
+            cart[productName] = {productName: productName, productPrice: productPrice, productImage: productImage};
+            const cartLength = Object.keys(cart).length;
             cartNumber.innerText = `${cartLength}`;
-
-
-
-
+            console.info(cart[productName].productPrice);
         })
-    }
-
+    })
 })
 
 

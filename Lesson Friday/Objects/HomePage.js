@@ -151,8 +151,8 @@ addEventListener("load", (event) => {
      * in the cart array.
      * @testBtns [string]  Elements that has the specific class "home__page__item__content__details__price__group__buttons__btn"
      * are the add to cart buttons on the product cards.
-     * @cart [array] cart array that will store product names.
-     * @testBtn [string] Is a selected button with a specific index.
+     * @cart [object] cart object that will store product details.
+     * @testBtn [string] Is a selected button for a specific product card;
      * @cartNumber [string] contains a number value that appears on the cart icon
      *
      * */
@@ -169,7 +169,7 @@ addEventListener("load", (event) => {
             cart[productName] = {productName: productName, productPrice: productPrice, productImage: productImage};
             const cartLength = Object.keys(cart).length;
             cartNumber.innerText = `${cartLength}`;
-            console.info(cart[productName].productPrice);
+            console.info(cart[productName]);
         })
     })
 })

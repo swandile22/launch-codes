@@ -83,13 +83,15 @@ nav .home__page__navbar {
     padding: 5px 10px;
 }
 
+/************CART PAGE STYLING**************/
 .cart__page__section {
     display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
 }
 
 .cart__page__product__section {
     width: 55%;
-    padding-left: 100px;
 }
 
 .cart__page__product__section__product {
@@ -103,10 +105,42 @@ nav .home__page__navbar {
 .cart__page__product__section__product__price__group {
     display: flex;
     flex-direction: column;
+    width: 50%;
+}
+
+.cart__page__product__section__product__qty {
+    width: 50px;
+    text-align: center;
+}
+
+.cart__page__product__section__product__remove__group {
+    display: flex;
+    align-items: center;
+    padding-top: 41px;
+    gap: 10px;
+}
+
+.cart__page__product__section__product__remove__group svg {
+    width: 15px;
+    fill: grey;
+}
+
+.cart__page__product__section__product__remove__group__text {
+    color: grey;
 }
 
 .cart__page__section__checkout {
     border: 2px solid #000;
+    width: 234px;
+    height: 100%;
+    padding: 0 50px 20px 50px;
+}
+
+.cart__page__section__checkout__total__group button {
+    background-color: hsl(147.25deg 95.64% 34.29% / 81%);
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 5px 10px;
 }
 
 /************************************************/

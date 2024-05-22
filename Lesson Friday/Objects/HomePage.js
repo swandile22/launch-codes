@@ -135,7 +135,7 @@ productsList.push(new ProductObject(
 
 addEventListener("load", (event) => {
     const homePageContent = document.getElementById("home__page__product__listing");
-
+    const cartButton = document.getElementById("home__page__navbar__cart__id")
     productsList.forEach((product) => {
         homePageContent.innerHTML += generateCard(product.getImage(),
             product.getTitle(),
@@ -159,7 +159,7 @@ addEventListener("load", (event) => {
     let testBtns = document.querySelectorAll(".home__page__item__content__details__price__group__buttons__btn");
     const cart = {};
     const cartNumber = document.getElementById("home__page__navbar__cart__number__id");
-
+    let cartLength = 0;
     testBtns.forEach((testBtn) => {
         testBtn.addEventListener("click", () => {
             const productName = testBtn.dataset.productType;
@@ -167,10 +167,16 @@ addEventListener("load", (event) => {
             const productImage = testBtn.dataset.productImage;
 
             cart[productName] = {productName: productName, productPrice: productPrice, productImage: productImage};
-            const cartLength = Object.keys(cart).length;
+            cartLength = Object.keys(cart).length;
             cartNumber.innerText = `${cartLength}`;
             console.info(cart[productName]);
         })
+    })
+
+    cartButton.addEventListener("click", () => {
+        console.log("I got clicked");
+        sessionStorage.setItem("cartItems", JSON.stringify(cart));
+        sessionStorage.setItem("cartLength", JSON.stringify(cartLength));
     })
 })
 

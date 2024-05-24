@@ -167,7 +167,7 @@ addEventListener("load", (event) => {
             const productImage = testBtn.dataset.productImage;
 
             cart[productName] = {productName: productName, productPrice: productPrice, productImage: productImage};
-            cartLength = Object.keys(cart).length;
+            cartLength = calculateCartLength(cart);
             cartNumber.innerText = `${cartLength}`;
             console.info(cart[productName]);
         })
@@ -175,8 +175,7 @@ addEventListener("load", (event) => {
 
     cartButton.addEventListener("click", () => {
         console.log("I got clicked");
-        sessionStorage.setItem("cartItems", JSON.stringify(cart));
-        sessionStorage.setItem("cartLength", JSON.stringify(cartLength));
+        saveCartSessionStorage(cart);
     })
 })
 

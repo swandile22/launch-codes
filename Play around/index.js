@@ -295,3 +295,22 @@
 // console.log(matrix);
 // console.log(rowString);
 // console.log(firstRow);
+
+/*************SPREAD OPERATORS*****************/
+
+// const numberList = [1, 2, 3, 4, 5, 6];
+// const maxNumber = Math.max(...numberList);
+// const minNumber = Math.min(...numberList);
+// const username = "Bro Code";
+// const letters = [...username].join('-');
+// const fruits = ["apple", "orange", "pear", "banana"];
+// const vegetables = ["brocolli", "carrots", "spinach", "Onions"];
+// const foods = [...fruits, ...vegetables, "Noodles", "Pizza"];
+//
+// console.log(...numberList);
+// console.log(maxNumber);
+// console.log(minNumber);
+// console.log(letters);
+// console.log([...fruits]);
+// console.log(vegetables);
+// console.log(foods);

@@ -14,6 +14,7 @@ nav .home__page__navbar {
 }
 
 .home__page__navbar__cart {
+    color: #000;
     position: relative;
     background: #fff;
     padding: 10px;

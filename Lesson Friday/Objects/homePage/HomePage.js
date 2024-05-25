@@ -91,35 +91,35 @@ function ProductObject(image, title, description, price) {
 const productsList = [];
 
 productsList.push(new ProductObject(
-    "images/DrinkJarGrandpasMoonshine.webp",
+    "../images/DrinkJarGrandpasMoonshine.webp",
     "GrandPa's Moonshine!",
     "Lorem ipsum dolor sit amet, consectetur adipisicing.",
     (10 * 50)
 ));
 
 productsList.push(new ProductObject(
-    "images/mariabeatrice-alonzi-VyI0GBHSsJ8-unsplash.jpg",
+    "../images/mariabeatrice-alonzi-VyI0GBHSsJ8-unsplash.jpg",
     "Mike Sneaker",
     "Lorem ipsum dolor sit amet, consectetur adipisicing.",
     45
 ));
 
 productsList.push(new ProductObject(
-    "images/mariabeatrice-alonzi-VyI0GBHSsJ8-unsplash.jpg",
+    "../images/mariabeatrice-alonzi-VyI0GBHSsJ8-unsplash.jpg",
     "Madidas dress",
     "Lorem ipsum dolor sit amet, consectetur adipisicing.",
     100
 ));
 
 productsList.push(new ProductObject(
-    "images/mariabeatrice-alonzi-VyI0GBHSsJ8-unsplash.jpg",
+    "../images/mariabeatrice-alonzi-VyI0GBHSsJ8-unsplash.jpg",
     "Life",
     "Lorem ipsum dolor sit amet, consectetur adipisicing.",
     89
 ));
 
 productsList.push(new ProductObject(
-    "images/mariabeatrice-alonzi-VyI0GBHSsJ8-unsplash.jpg",
+    "../images/mariabeatrice-alonzi-VyI0GBHSsJ8-unsplash.jpg",
     "Lorem ipsum",
     "Lorem ipsum dolor sit amet, consectetur adipisicing.",
     12

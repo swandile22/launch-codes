@@ -271,27 +271,27 @@
 
 /*************JAVASCRIPT 2D ARRAYS*****************/
 
-const matrix =
-        [["📞", "🔘", "☎️"],
-        [1+"  ",2, "  " +3],
-        [4+"  ",5, "  " +6],
-        [7+"  ",8, "  " +9],
-        ["*"+"  ", 0,"  " + "#"]];
-
-for(let row of matrix) {
-    console.lo
-}
-
-// matrix[0][0] = "X";
-// matrix[0][1] = "O";
-// matrix[0][2] = "X";
-// matrix[1][0] = "O";
-// matrix[1][1] = "X";
-// matrix[1][2] = "O";
-// matrix[2][0] = "X";
-// matrix[2][1] = "O";
-// matrix[2][2] = "X";
-const rowString = matrix.join("\n");
-console.log(matrix);
-console.log(rowString);
-console.log(firstRow);
+// const matrix =
+//         [["📞", "🔘", "☎️"],
+//         [1+"  ",2, "  " +3],
+//         [4+"  ",5, "  " +6],
+//         [7+"  ",8, "  " +9],
+//         ["*"+"  ", 0,"  " + "#"]];
+//
+// for(let row of matrix) {
+//     console.lo
+// }
+//
+// // matrix[0][0] = "X";
+// // matrix[0][1] = "O";
+// // matrix[0][2] = "X";
+// // matrix[1][0] = "O";
+// // matrix[1][1] = "X";
+// // matrix[1][2] = "O";
+// // matrix[2][0] = "X";
+// // matrix[2][1] = "O";
+// // matrix[2][2] = "X";
+// const rowString = matrix.join("\n");
+// console.log(matrix);
+// console.log(rowString);
+// console.log(firstRow);

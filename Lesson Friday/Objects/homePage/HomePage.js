@@ -26,6 +26,7 @@ const generateCard = (image, title, description, price) => {
                         data-product-type="${title}"
                         data-product-price="${price}"
                         data-product-image="${image}"
+                        data-product-description="${description}"
                         id="home__page__item__content__details__price__group__buttons__btn"
                         class="home__page__item__content__details__price__group__buttons__btn">
                             Add to cart
@@ -165,8 +166,12 @@ addEventListener("load", (event) => {
             const productName = testBtn.dataset.productType;
             const productPrice = testBtn.dataset.productPrice;
             const productImage = testBtn.dataset.productImage;
+            const productDescription = testBtn.dataset.productDescription;
 
-            cart[productName] = {productName: productName, productPrice: productPrice, productImage: productImage};
+            cart[productName] = {productName: productName,
+                productPrice: productPrice,
+                productImage: productImage,
+                productDescription: productDescription};
             cartLength = calculateCartLength(cart);
             cartNumber.innerText = `${cartLength}`;
             console.info(cart[productName]);

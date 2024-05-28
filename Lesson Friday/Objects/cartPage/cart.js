@@ -4,7 +4,7 @@ const cartNumber = document.getElementById("home__page__navbar__cart__number__id
 cartNumber.innerText = calculateCartLength(cartItems);
 console.log(cartItems);
 
-const cartItemCard = (image, title, description) => {
+const cartItemCard = (image, title, description, price) => {
     return `
         <div class="cart__page__product__section__product">
             <img src="${image}">
@@ -16,9 +16,8 @@ const cartItemCard = (image, title, description) => {
                ${description}
             </p>
             </div>
-
             <div class="cart__page__product__section__product__price__group">
-                <div>Price</div>
+                <div>R${price}</div>
                 <label for="cart__page__product__section__product__qty__id">QTY</label>
                 <input type="number" id="cart__page__product__section__product__qty__id"
                        class="cart__page__product__section__product__qty" value="1">
@@ -42,10 +41,11 @@ const cartItemCard = (image, title, description) => {
     `
 }
 
-function CartItemObject(image, productTitle, description) {
+function CartItemObject(image, productTitle, description, price) {
     this.image = image;
     this.productTitle = productTitle;
     this.description = description;
+    this.price = price;
 
     this.getImage = function () {
         return this.image;
@@ -58,6 +58,11 @@ function CartItemObject(image, productTitle, description) {
     this.getDescription = function () {
         return this.description;
     }
+
+    this.getPrice = function () {
+        return this.price;
+    }
+
     let setImage = (newImage) => {
         this.image = newImage;
     }
@@ -68,19 +73,26 @@ function CartItemObject(image, productTitle, description) {
 
     let setDescription = (newDescription) => {
         this.description = newDescription;
-    };
+    }
+
+    let setPrice = (newPrice) => {
+        this.price = newPrice;
+    }
 }
 
 const cartItemsList = [];
 
-const createCartObject = (image, title, description) => {
-    Object.entries(cartItems).forEach(([key, value]) => {
-        cartItemsList.push(new CartItemObject(value.productImage, value.productName, value.productDescription));
-    })
-}
-
-createCartObject();
+createCartObject(cartItems);
 
 const cartPageContent = document.getElementById("cart__page__product__section__id");
 
-console.log(CartItemObject.getImage);
+cartItemsList.forEach((item) => {
+    cartPageContent.innerHTML += cartItemCard(item.getImage(),
+        item.getTitle(),
+        item.getDescription(),
+        item.getPrice());
+});
+
+
+
+

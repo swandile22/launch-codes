@@ -5,7 +5,7 @@ body {
 
 nav {
     background: bisque;
-    padding: 30px 60px;
+    padding: 40px 86px;
 }
 
 nav .home__page__navbar {
@@ -85,6 +85,10 @@ nav .home__page__navbar {
 }
 
 /************CART PAGE STYLING**************/
+.shopping__cart__page__header {
+    padding: 20px 0 0 86px;
+}
+
 .cart__page__section {
     display: flex;
     justify-content: space-around;
@@ -100,7 +104,7 @@ nav .home__page__navbar {
     align-items: center;
     gap: 50px;
     border: 2px solid #000;
-    padding: 20px 50px;
+    padding: 30px 50px;
 }
 
 .cart__page__product__section__product img {
@@ -112,6 +116,11 @@ nav .home__page__navbar {
     display: flex;
     flex-direction: column;
     width: 50%;
+    gap: 25px;
+}
+
+.cart__page__product__section__product__price__group__price {
+    font-size: 1.3em;
 }
 
 .cart__page__product__section__product__qty {
@@ -122,8 +131,9 @@ nav .home__page__navbar {
 .cart__page__product__section__product__remove__group {
     display: flex;
     align-items: center;
-    padding-top: 41px;
     gap: 10px;
+    height: 30px;
+    cursor: pointer;
 }
 
 .cart__page__product__section__product__remove__group svg {

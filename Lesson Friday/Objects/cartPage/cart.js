@@ -13,15 +13,18 @@ const cartItemCard = (image, title, description, price) => {
                     ${title}
                 </h3>
                  <p>
-               ${description}
-            </p>
+                    ${description}
+                </p>
             </div>
             <div class="cart__page__product__section__product__price__group">
-                <div>R${price}</div>
-                <label for="cart__page__product__section__product__qty__id">QTY</label>
-                <input type="number" id="cart__page__product__section__product__qty__id"
-                       class="cart__page__product__section__product__qty" value="1">
-                <div class="cart__page__product__section__product__remove__group">
+                <div class="cart__page__product__section__product__price__group__price">R${price}</div>
+                <div class="cart__page__product__section__product__price__group__qty_section">
+                    <label for="cart__page__product__section__product__qty__id">QTY</label>
+                    <input type="number" id="cart__page__product__section__product__qty__id"
+                       class="cart__page__product__section__product__qty" value="1"
+                    >
+                </div>
+                <div id="cart__page__product__section__product__remove__group__id" class="cart__page__product__section__product__remove__group">
                     <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome
@@ -85,6 +88,7 @@ const cartItemsList = [];
 createCartObject(cartItems);
 
 const cartPageContent = document.getElementById("cart__page__product__section__id");
+const removeItems = document.getElementById("cart__page__product__section__product__remove__group__id");
 
 cartItemsList.forEach((item) => {
     cartPageContent.innerHTML += cartItemCard(item.getImage(),
@@ -92,6 +96,11 @@ cartItemsList.forEach((item) => {
         item.getDescription(),
         item.getPrice());
 });
+
+
+
+
+
 
 
 

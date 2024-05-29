@@ -2,14 +2,13 @@ const cartItems = fetchCartSessionStorage();
 const cartNumber = document.getElementById("home__page__navbar__cart__number__id");
 
 cartNumber.innerText = calculateCartLength(cartItems);
-console.log(cartItems);
 
 const cartItemCard = (image, title, description, price) => {
     return `
         <div class="cart__page__product__section__product">
             <img src="${image}">
             <div>
-                <h3>
+                <h3 class="cart__page__product__section__product__title">
                     ${title}
                 </h3>
                  <p>
@@ -88,7 +87,6 @@ const cartItemsList = [];
 createCartObject(cartItems);
 
 const cartPageContent = document.getElementById("cart__page__product__section__id");
-const removeItems = document.getElementById("cart__page__product__section__product__remove__group__id");
 
 cartItemsList.forEach((item) => {
     cartPageContent.innerHTML += cartItemCard(item.getImage(),
@@ -96,6 +94,39 @@ cartItemsList.forEach((item) => {
         item.getDescription(),
         item.getPrice());
 });
+
+const removeItemsAncestor = document.querySelectorAll(".cart__page__product__section__product__remove__group");
+
+cartPageContent.addEventListener("click", (event) => {
+    if (event.target && event.target.closest(".cart__page__product__section__product__remove__group")) {
+        const productElement = event.target.closest(".cart__page__product__section__product");
+        const titleElement = productElement.querySelector(".cart__page__product__section__product__title");
+        const title = titleElement.textContent;
+
+        const index = cartItemsList.findIndex(item => item.getTitle() === title)
+
+        if (index !== -1) {
+            cartItemsList.splice(index, 1);
+            console.log(cartItemsList);
+        }
+
+        cartNumber.innerText = cartItemsList.length;
+
+        productElement.remove();
+
+    }
+});
+
+// removeItems.forEach((item) => {
+//     item.addEventListener("click", () => {
+//         console.log("I got clicked");
+//         // const index = cartItemsList.indexOf(item);
+//         // if (index > -1) {
+//         //     cartItemsList.splice(index, 1);
+//         //     console.log(cartItemsList);
+//         // }
+//     })
+// })
 
 
 

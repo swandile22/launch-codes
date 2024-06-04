@@ -101,19 +101,16 @@ cartPageContent.addEventListener("click", (event) => {
     if (event.target && event.target.closest(".cart__page__product__section__product__remove__group")) {
         const productElement = event.target.closest(".cart__page__product__section__product");
         const titleElement = productElement.querySelector(".cart__page__product__section__product__title");
-        const title = titleElement.textContent;
+        const title = titleElement.textContent.trim();
 
         const index = cartItemsList.findIndex(item => item.getTitle() === title)
+        console.log(title)
 
         if (index !== -1) {
             cartItemsList.splice(index, 1);
-            console.log(cartItemsList);
+            cartNumber.innerText = cartItemsList.length;
+            productElement.remove();
         }
-
-        cartNumber.innerText = cartItemsList.length;
-
-        productElement.remove();
-
     }
 });
 

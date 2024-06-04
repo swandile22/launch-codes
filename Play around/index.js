@@ -314,3 +314,27 @@
 // console.log([...fruits]);
 // console.log(vegetables);
 // console.log(foods);
+
+/*************REST PARAMETER*****************/
+
+// const openFridge = (...foods) => {
+//     console.log(foods)
+// }
+// const food1 = "Carrots";
+// const food2 = "Beetroot";
+// const food3 = "Tomatoes";
+// const food4 = "Potatoes";
+
+// console.log(food1);
+// openFridge(food1, food2, food3, food4);
+
+//     let result = 0;
+// const sum = (...numbers) => {
+//     for(let number of numbers) {
+//         result += numbers;
+//     }
+//     return result;
+// }
+//
+// sum(1, 2, 3, 4);
+

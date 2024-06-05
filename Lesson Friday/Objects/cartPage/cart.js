@@ -43,44 +43,44 @@ const cartItemCard = (image, title, description, price) => {
     `
 }
 
-function CartItemObject(image, productTitle, description, price) {
-    this.image = image;
-    this.productTitle = productTitle;
-    this.description = description;
-    this.price = price;
-
-    this.getImage = function () {
-        return this.image;
-    }
-
-    this.getTitle = function () {
-        return this.productTitle;
-    }
-
-    this.getDescription = function () {
-        return this.description;
-    }
-
-    this.getPrice = function () {
-        return this.price;
-    }
-
-    let setImage = (newImage) => {
-        this.image = newImage;
-    }
-
-    let setTitle = (newTitle) => {
-        this.title = newTitle;
-    }
-
-    let setDescription = (newDescription) => {
-        this.description = newDescription;
-    }
-
-    let setPrice = (newPrice) => {
-        this.price = newPrice;
-    }
-}
+// function CartItemObject(image, productTitle, description, price) {
+//     this.image = image;
+//     this.productTitle = productTitle;
+//     this.description = description;
+//     this.price = price;
+//
+//     this.getImage = function () {
+//         return this.image;
+//     }
+//
+//     this.getTitle = function () {
+//         return this.productTitle;
+//     }
+//
+//     this.getDescription = function () {
+//         return this.description;
+//     }
+//
+//     this.getPrice = function () {
+//         return this.price;
+//     }
+//
+//     let setImage = (newImage) => {
+//         this.image = newImage;
+//     }
+//
+//     let setTitle = (newTitle) => {
+//         this.title = newTitle;
+//     }
+//
+//     let setDescription = (newDescription) => {
+//         this.description = newDescription;
+//     }
+//
+//     let setPrice = (newPrice) => {
+//         this.price = newPrice;
+//     }
+// }
 
 const cartItemsList = [];
 

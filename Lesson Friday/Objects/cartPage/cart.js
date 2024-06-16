@@ -88,6 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         qtyElement.addEventListener("change", (event) => {
             cartItem.quantity = parseInt(event.target.value);
+            item.dataset.cartItem = JSON.stringify(cartItem);
             updateTotal();
         });
 
@@ -111,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 
-    updateTotal();
+    updateTotal(); // Initial total calculation
 });
 
 

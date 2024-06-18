@@ -4,13 +4,19 @@ body {
 }
 
 nav {
-    background: bisque;
-    padding: 40px 86px;
+    margin-bottom: 150px;
 }
 
 nav .home__page__navbar {
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background: bisque;
+    padding: 20px 86px;
+    width: 100%;
+    align-items: end;
+    box-sizing: border-box;
 }
 
 .home__page__navbar__cart {
